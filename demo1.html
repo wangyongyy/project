@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>日历_UI</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="jquery-ui/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery-ui/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/demo.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="header_main">
+				<h1>知问</h1>
+				<div class="header_search">
+					<input type="text" name="search" class="search" />
+				</div>
+				<div class="header_button">
+					
+					<button id="search_button">查询</button>
+				</div>
+				<div class="header_member">
+					<a href="#" id="reg_a">注册</a> | <a href="#" id="login_a">登录</a>
+				</div>
+			</div>
+		</header>
+		
+		<div id="reg" title="会员注册">
+			<p>
+				<label for="user">账号：</label>
+				<input type="text" name="user" class="text" id="user" title="请输入账号，不少于2位" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label for="pass">密码：</label>
+				<input type="password" name="pass" class="text" id="pass" title="请输入密码，不少于6位" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label for="email">邮箱：</label>
+				<input type="text" name="email" class="text" id="email" title="请输入正确邮箱" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label>性别：</label>
+				<input type="radio" checked="checked" name="sex" value="male" id="male" /><label for="male">男</label></input>
+				<input type="radio" name="sex" value="female" id="female" /><label for="female">女</label></input>
+			</p>
+			<p>
+				<label for="date">生日：</label>
+				<input type="text" readonly="readonly" name="date" class="text" id="date" />
+			</p>
+		</div>
+		
+		<div id="login">
+			会员登录
+		</div>
+		
+		
+		
+	</body>
+</html>
